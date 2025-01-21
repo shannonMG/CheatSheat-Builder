@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Month Calendar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #calendarContainer {
+            width: 80vw; /* Constrain the container to 80% of the viewport width */
+            margin: 20px auto;
+            overflow-x: auto; /* Add horizontal scroll if content overflows */
+        }
+        table {
+            width: 100%; /* Ensure the table takes up the full width of the container */
+            border-collapse: collapse;
+            table-layout: fixed; /* Ensure equal-width cells */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+            height: 50px; /* Fixed height for all cells */
+            padding: 12px; /* Add padding to cells */
+            box-sizing: border-box; /* Ensure padding is included in height and width */
+            word-wrap: break-word; /* Allow words to break */
+            white-space: nowrap; /* Prevent overflowing text */
+            overflow: hidden; /* Hide any overflowing content */
+            text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        td.empty {
+            background-color: #f9f9f9;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <h1>Calendar: April - June 2025</h1>
+    <div id="calendarContainer"></div>
+    <script src="index.js"></script>
+</body>
+</html>
