@@ -46,6 +46,22 @@
 </head>
 <body>
     <h1>Calendar: April - June 2025</h1>
+    <form>
+        <label>On what date does this session begin?</label>
+        <input id="startDate" type="date" required></input>
+
+        <label>On what date does this session end?</label>
+        <input id="endDate" type="date" required></input>
+
+        <label>How many holdidays are there for this session?</label>
+        <input id="holidayCount" type="number"></input>
+        
+        <div id="holidayInputContainer"></div>
+
+        <button type="button" id="updateCalendar">Generate Calendar</button>
+
+    </form>
+    
     <div id="calendarContainer"></div>
     <script src="index.js"></script>
 </body>
